@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav{
+display:flex;
+box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+  padding : 30px;
+  width:120px;
+  height:40px;
+}
+
+.gridImg{
+  margin-top : 30px;
+  text-align: center;
+
+
+}
+
+.grid {
+  width: 60%;
+  height: 40%;
+
+}
+
+.quoteBox{
+  text-align: center;
+  font-size: 20px;
+  padding : 5px;
+
+}
+
+.quote{
+  font-family : Poppins;
+  font-weight: 300px;
+}
+
+.gray{
+
+  color:grey;
+}
+
+.star{
+height:15px;
+
+}
+
+.cardStat{
+
+  display: flex;
+  align-items: center;
+
+}
+
+.cardImage{
+  width:176px;
+  height:234px;
+  border-radius: 9px;
+
+}
+
+.cardBox{
+
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position: relative;
+  
+}
+
+.cardBadge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.cardSection{
+
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  margin-left:5%;
+}
