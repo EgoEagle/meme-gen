@@ -23,7 +23,9 @@ export default function Meme()
                </div>
                     <button className="generateButton" onClick={GetMemeImage}> Get a new meme image 🖼</button>
                <div>
+                    <p className="toptext"> </p>
                     <img className="memeImg" src={image}></img>
+                    <p className="bottext"> </p>
                </div>
           </div>
 
