@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fb8498a42a616b51408b",
+    "revision": "f49e8d272e0ee58b1d2d",
     "url": "/meme-gen/static/css/main.fd2aaef4.chunk.css"
   },
   {
-    "revision": "fb8498a42a616b51408b",
-    "url": "/meme-gen/static/js/main.1994d688.chunk.js"
+    "revision": "f49e8d272e0ee58b1d2d",
+    "url": "/meme-gen/static/js/main.fb21b368.chunk.js"
   },
   {
     "revision": "61d14f92e7209c6eb89e",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/meme-gen/static/media/trollface.16ea36d1.png"
   },
   {
-    "revision": "117ff8c83563b98f3f2e39affd76e15f",
+    "revision": "0433ca50d33c27dabeae0ccb3fa9d59c",
     "url": "/meme-gen/index.html"
   }
 ];
