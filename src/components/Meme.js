@@ -4,7 +4,7 @@ import memesData from "../data.js";
 
 export default function Meme()
 {
-     const[image, setUrl] = React.useState("")
+     const[image, setUrl] = React.useState("http://i.imgflip.com/1bij.jpg")
      
 
      function GetMemeImage(){
@@ -19,7 +19,7 @@ export default function Meme()
      return(
           <div className="memebox">
                <div className="inputDiv">
-                    <input className="input1" placeholder="    Top Text" value="Hello"></input>
+                    <input className="input1" placeholder="    Top Text"></input>
                     <input className="input2" placeholder="    Bottom Text"></input>
                </div>
                     <button className="generateButton" onClick={GetMemeImage}> Get a new meme image 🖼</button>
