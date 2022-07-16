@@ -1,9 +1,9 @@
 import React from "react";
-import memesData from "../data.js";
 
 
 export default function Meme()
 {
+     const[allMemes, setAllMemes] = React.useState([])
      const[image, setUrl] = React.useState("http://i.imgflip.com/1bij.jpg")
      const[formData,setFormData] = React.useState(
           {topText:"" , botText:""}
@@ -11,13 +11,21 @@ export default function Meme()
      
 
      function GetMemeImage(){
-          const memesArray = memesData.data.memes;
-          const randomNumber = Math.floor(Math.random() * memesArray.length);
-          const url = memesArray[randomNumber].url;
+
+          const randomNumber = Math.floor(Math.random() * allMemes.length);
+          const url = allMemes[randomNumber].url;
 
           setUrl(url);
 
      }
+
+     React.useEffect(() =>{
+          fetch("https://api.imgflip.com/get_memes")
+               .then(res => res.json())
+               .then(data => setAllMemes(data.data.memes))
+     },[])
+
+
 
      function handleChange(event){
           setFormData(prevFormData => {
@@ -28,8 +36,6 @@ export default function Meme()
           })
 
      }
-
-
 
         
      return(
